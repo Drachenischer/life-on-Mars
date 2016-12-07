@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Заявка на экскурсионный полёт на Марс</title>
+		<link href="./css/style.css" rel="stylesheet" media="all" >
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.liTranslit.js"></script>
+		<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Заявка на экскурсионный полёт на Марс</h1>
+		</header>
+		<div class="main-body">
+			<div class="mars">
+				<form action="" class="mars-form" method="post">
+				<div class="mars-form__content">
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="lastname">Фамилия</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.537751238" class="lastname" pattern="^[А-Яа-яЁё]+$" required>
+							<div class="mars-form__row mars-form__early">
+								<input type="checkbox" id="check-early-change"> 
+								<label for="check-early-change">ранее менялась</label>
+							</div>
+						</div>
+					</div>
+					<div class="mars-form__row mars-form__hidden">
+						<div class="mars-form__label">
+							<label for="prevname">Прежняя фамилия</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.1174343131" class="prevname" pattern="^[А-Яа-яЁё]+$">
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="firstname">Имя</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.1950570903" class="firstname" pattern="^[А-Яа-яЁё]+$" required>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="middlename">Отчество</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.451183428" class="middlename" pattern="^[А-Яа-яЁё]+$">
+							<div class="mars-form__middlename-valid">
+								<div class="mars-form__middlename-span">
+									<span>Если вы не хотите лететь в багажном отсеке, пожалуйста, укажите ваше отчество.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="lastnamelat">Фамилия латиницей</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.526663973" pattern="^[a-zA-Z]+$" class="lastnamelat" required>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="firstnamelat">Имя латиницей</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" name="entry.513418537" pattern="^[a-zA-Z]+$" class="firstnamelat" required>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="selectdate">Дата рождения</label>
+						</div>
+						<div class="mars-form__input">
+							<div class="mars-form__no-valid-day">
+								<select name="entry.673149110_day" class="mars-form__day">
+									<option selected="selected"> </option>								
+								</select>
+								<select name="entry.673149110_month" class="mars-form__month">
+									<option selected="selected"> </option>			
+								</select>
+								<select name="entry.673149110_year" class="mars-form__year">
+									<option selected="selected"> </option>
+								</select>
+							</div>
+							<div class="mars-form__no-valid-text">
+								<span>Какой-то текст про то, почему нельзя летать тем, кому за 90.</span>
+							</div>
+						</div>
+					</div>
+					<div class="mars-form__row mars-form__check-sex">
+						<div class="mars-form__label">
+							<label>Пол</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="checkbox" name="entry.1790969860" id="sex"> 
+							<label for="sex"></label>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="familystatus">Семейный статус</label>
+						</div>
+						<div class="mars-form__input">
+							<select name="entry.878979277" class="mars-form__family-status">
+								<option selected="selected"> </option>
+							</select>
+						</div>
+					</div>
+
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="education">Образование</label>
+						</div>
+						<div class="mars-form__input">
+							<select name="entry.692353422" class="mars-form__education">
+								<option selected="selected"> </option>
+								<option>высшее</option>
+								<option>среднее специальное</option>
+								<option>среднее</option>
+								<option>студент</option>
+							</select>
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__contact">
+							<h3>Контактная информация</h3>
+						</div>
+					</div>
+					
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="phone">Моб. телефон</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="text" class="mars-form__input__phone" name="entry.1084609420" required placeholder="+7">
+						</div>
+					</div>
+					<div class="mars-form__row">
+						<div class="mars-form__label">
+							<label for="email">Электронная почта</label>
+						</div>
+						<div class="mars-form__input">
+							<input type="email" class="mars-form__input__email" name="entry.756620987" required>
+							<input type="hidden" name="fvv" value="1">
+							<input type="hidden" name="draftResponse" value="[,,&quot;1729943131523597404&quot;]">
+							<input type="hidden" name="pageHistory" value="0">
+							<input type="hidden" name="fbzx" value="1729943131523597404">
+						</div>
+					</div>
+				</div>
+					<div class="mars-form__footer">
+						<div class="mars-form__footer-center">
+							<div class="mars-form__row">
+								<div class="mars-form__last-check"><input type="checkbox" id="check-ok"></div>
+								<div class="mars-form__last-check-label"><label for="check-ok">Ставя эту галочку, я подтверждаю, что поставил её в трезвом уме и твёрдой памяти.</label></div>
+							</div>
+							<button class="mars-form__footer__button">Полететь на Марс</button>
+						</div>
+					</div>
+				</form>
+				<div class="mars-text">
+					<h4>Почему стабильно солнечное затмение?</h4>
+					<p>Эффективный диаметр жизненно вызывает случайный эффективный радиус, а время ожидания составляло бы 80 миллиардов лет.</p>
+				</div>
+		</div>
+	</div>
+	</body>
+</html>

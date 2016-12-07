@@ -1,0 +1,294 @@
+body {
+	font-family: "Roboto";
+}
+
+body, h1, h3, h4, p {
+	margin: 0;
+}
+
+header {
+	margin: 25px 5% 30px;
+}
+
+.mars {
+	margin: 0 5%;
+}
+
+.mars-form {
+	width: 65%;
+	float: left;
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(top, #fadbd9 0%, #ffebea 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #fadbd9 0%, #ffebea 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #fadbd9 0%, #ffebea 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffebea), color-stop(100, #ffebea));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #fadbd9 0%, #ffebea 100%);
+	/* W3C Markup */ 
+	background-image: linear-gradient(to bottom, #fadbd9 0%, #ffebea 100%);
+	
+	box-shadow: -23px 0 25px -18px #fadbd9, 23px 0 25px -18px #fadbd9;
+
+	-webkit-box-shadow: inset 0px 55px 100px 0px rgba(241,211,209,1);
+	-moz-box-shadow: inset 0px 55px 100px 0px rgba(241,211,209,1);
+	box-shadow: inset 0px 55px 100px 0px rgba(0,0,0,0.1);
+}
+
+.mars-text {
+    margin-left: 5%;
+    width: 25%;
+    float: left;
+}
+
+.mars-form__label {
+	width: 30%;
+	float: left;
+}
+
+.mars-form__row  {
+    padding-bottom: 1%;
+}
+
+.mars-form__row label {
+    font-size: 12px;
+}
+
+.mars-form__row input[type="checkbox" i] {
+	margin: 5px 0 0 0;
+	vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+.mars-form__input {
+	width: 68%;
+	float: left;
+    padding-left: 2%;
+}
+
+.mars-form__input select {
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(229, 229, 229));
+}
+
+.mars-form__content {
+	padding: 4% 3%;
+    position: relative;
+}
+
+.mars-form__footer {
+	padding: 5%;
+	background: linear-gradient(to top, #a7b2cc, #d4c9d6);
+}
+
+.mars-form__footer__button {
+    border: 0;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 5px 7px -2px gray;
+    font-size: 25px;
+    font-weight: bold;
+    color: #a1a2a8;
+    padding: 13px 0px;
+    margin-top: 5%;
+    cursor: pointer;
+	/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-corner, #e3e3e9 0%, #FEFEFE 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-corner, #e3e3e9 0%, #FEFEFE 100%);
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-corner, #e3e3e9 0%, #FEFEFE 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #e3e3e9), color-stop(100, #FEFEFE));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-corner, #e3e3e9 0%, #FEFEFE 100%);
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-corner at center, #e3e3e9 0%, #FEFEFE 100%);
+}
+
+.mars-form__footer__button:disabled {
+	color: #a1a2a8;
+}
+
+.mars-form__footer__button:enabled {
+    color: #000000;
+}
+
+.mars-form__row:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.mars-form__footer-center {
+    width: 50%;
+    margin-left: 30%;
+    padding-left: 1%;
+}
+
+.mars-form__footer-center label {
+    font-size: 12px;
+}
+
+
+#sex {display: none;}
+
+[for="sex"] {
+  display: inline-block;
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+[for="sex"]:before, [for="sex"]:after {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #c6c6c6;
+}
+
+[for="sex"]:before {
+	content: "мужской";
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(rgb(101,101,99), rgb(163,163,161));
+    color: white;
+}
+[for="sex"]:after {
+	content: "женский";
+    border-radius: 0 5px 5px 0;
+	background: linear-gradient(rgb(255,255,255), rgb(229,229,229));
+}
+#sex:checked ~ [for="sex"]:after {
+  background: linear-gradient(rgb(101,101,99), rgb(163,163,161));
+  color: white;
+}
+#sex:checked ~ [for="sex"]:before {
+  background: linear-gradient(rgb(255,255,255), rgb(229,229,229));
+  color: inherit;
+}
+
+.mars-form__input input[type="text"], .mars-form__input input[type="email"]  {
+	width: 65%;
+	height: 20px;
+    border-top: 2px solid #939393;
+    padding-left: 2px;
+}
+
+.error {
+	color: red;
+}
+
+.mars-form__hidden {
+	display: none;
+}
+
+.mars-form__middlename-valid {
+    position:relative;
+    width: 70%;
+    margin: 1% 0 1% -2%;
+}
+
+.mars-form__middlename-span {
+	padding: 2%;
+    background: #ffdddd;
+    position:relative;
+    z-index: 5;
+}
+
+.mars-form__middlename-valid:before, .mars-form__middlename-valid:after
+{
+    content:"";
+    position:absolute;
+    z-index:0;
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.6);
+    box-shadow:0 0 10px rgba(0,0,0,0.6);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.mars-form__middlename-valid:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.mars-form__middlename-valid span {
+	font-size: 12px;
+}
+
+.mars-form__valid-day {
+	background: #feffdc;
+    margin-left: -2%;
+    padding: 2% 2%;
+    width: 64%;
+    border-bottom: 1px solid #ffcccc;
+}
+
+.mars-form__no-valid-text {
+	display: none;
+}
+
+.mars-form__valid-day-text {
+	background: #feffdc;
+	padding: 2% 2%;
+	width: 64%;
+	margin-left: -2%;
+	display: block;
+}
+
+.mars-form__valid-day-text span {
+    font-size: 12px;
+}
+
+.mars-form__contact {
+	margin-left: 30%;
+    padding: 2% 0 0 2%;
+}
+
+.mars-form__last-check {
+	width: 15px;
+    float: left;
+}
+
+.mars-form__last-check-label {
+    margin-left: 5%;
+}
+
+.mars-form__content:before, .mars-form__content:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(223,188,186,0.8);
+    -moz-box-shadow: 0 0 20px rgba(223,188,186,0.8);
+    box-shadow: 0 0 20px rgba(223,188,186,0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.mars-form__content:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
